@@ -57,7 +57,7 @@ export default function AICoachPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-slate-900 via-rose-900 to-slate-900 overflow-hidden">
+      <section className="relative py-12 md:py-12 px-4 bg-gradient-to-br from-slate-900 via-rose-900 to-slate-900 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-rose-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" />
@@ -121,10 +121,16 @@ export default function AICoachPage() {
                     <span className="text-xs">Online</span>
                   </span>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white/20 text-slate-900 hover:bg-white/10">
-                  <Play className="mr-2 w-4 h-4" />
-                  Watch Coach in Action
-                </Button>
+                <a href="#interactive-demo">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-white/20 text-slate-900 hover:bg-white/10"
+                  >
+                    <Play className="mr-2 w-4 h-4" />
+                    Watch Coach in Action
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -340,7 +346,7 @@ export default function AICoachPage() {
       </section>
 
       {/* Interactive Demo */}
-      <section className="py-20 bg-white">
+      <section id="interactive-demo" className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Try Your AI Coach Right Now</h2>
@@ -571,7 +577,7 @@ export default function AICoachPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-rose-900 via-red-900 to-rose-900 text-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-rose-900 via-red-900 to-rose-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>

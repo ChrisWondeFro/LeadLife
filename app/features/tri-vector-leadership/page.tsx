@@ -7,7 +7,7 @@ export default function TriVectorLeadershipPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 overflow-hidden">
+      <section className="relative py-12 md:py-12 px-4 bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" />
@@ -121,7 +121,7 @@ export default function TriVectorLeadershipPage() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
-            Why Traditional Leadership Models Fail You
+            Why Most Traditional Leadership Models Fail
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -163,7 +163,7 @@ export default function TriVectorLeadershipPage() {
                   <span className="text-2xl">🌊</span>
                   <div>
                     <strong className="block text-lg">Dynamic Spectrum</strong>
-                    <p className="text-slate-600">Your leadership flows between three core energies</p>
+                    <p className="text-slate-600">Your leadership flows between three core synergies</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
@@ -449,11 +449,14 @@ export default function TriVectorLeadershipPage() {
                 <div className="h-48 bg-slate-50 rounded-xl flex items-center justify-center">
                   <div className="relative w-64 h-64">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-32 h-32 rounded-full border-4 border-indigo-200 border-t-indigo-600 animate-spin"></div>
+                      <div 
+                          className="w-32 h-32 rounded-full border-4 border-indigo-200 border-t-indigo-600 animate-spin"
+                          style={{ animationDuration: "3s" }}
+                      ></div>
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div
                           className="w-24 h-24 rounded-full border-4 border-purple-200 border-b-purple-600 animate-spin"
-                          style={{ animationDirection: "reverse", animationDuration: "2s" }}
+                          style={{ animationDirection: "reverse", animationDuration: "1s" }}
                         ></div>
                       </div>
                     </div>

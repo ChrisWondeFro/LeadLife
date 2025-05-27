@@ -8,7 +8,7 @@ export default function FeedbackPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900 overflow-hidden">
+      <section className="relative py-12 px-4 md:py-12 bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" />
@@ -25,7 +25,7 @@ export default function FeedbackPage() {
                 Revolutionary Honesty
               </div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Finally, Feedback That Helps Instead of Hurts
+                Feedback That Helps Instead of Hurts
               </h1>
               <p className="text-xl text-white/80">
                 Discover how others truly experience your leadership—through anonymous, structured, and psychologically

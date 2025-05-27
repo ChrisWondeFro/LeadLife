@@ -80,7 +80,7 @@ export default function FeaturesSection() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-bold mb-6 text-slate-900"
           >
-            Everything You Need to <span className="gradient-text">Lead Your Life</span>
+            Powerful Frameworks to help you<span className="gradient-text"> Refine Your Leadership</span>
           </motion.h2>
 
           <motion.p
