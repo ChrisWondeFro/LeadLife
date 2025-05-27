@@ -44,13 +44,13 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-white/80 text-sm font-medium animate-fade-in">
             <Sparkles className="w-4 h-4" />
-            <span>AI-Powered Leadership Discovery</span>
+            <span>AI-Powered Leadership Foundry</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white animate-fade-in leading-tight">
-            You're Already Leading
-            <span className="block mt-4 gradient-text">Your Most Important Life</span>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-fade-in leading-tight">
+            Leadership Is an Adventure That Began
+            <span className="block mt-4 gradient-text">With the Journey of Becoming You</span>
           </h1>
 
           {/* Dynamic Subheadline */}
