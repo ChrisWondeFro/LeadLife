@@ -48,12 +48,15 @@ export default function HeroSection() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-fade-in leading-tight">
+          <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold text-white animate-fade-in leading-tight">
             Leadership Is an Adventure
-            <span className="block mt-1 bg-gradient-to-r from-orange-600 via-purple-400 to-cyan-500 bg-clip-text text-transparent py-2">
+          </h1>
+          {/* Main Headline */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-fade-in leading-tight">
+            <span className="block mt-1 bg-gradient-to-r from-orange-600 via-purple-400 to-cyan-500 bg-clip-text text-transparent py-1">
               That Began
             </span>
-            <span className="block mt-1 bg-gradient-to-r from-orange-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent py-2">With the Journey of Becoming </span>
+            <span className="block mt-1 bg-gradient-to-r from-orange-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent py-1">With the Journey of Becoming</span>
             <span className="block bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">You</span>
           </h1>
 
