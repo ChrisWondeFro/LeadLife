@@ -18,7 +18,6 @@ const navigation = [
       { name: "AI Coach", href: "/features/ai-coach" },
     ],
   },
-  //{ name: "Pricing", href: "/pricing" },
   //{ name: "About", href: "/about" },
   //{ name: "Blog", href: "/blog" },
 ]

@@ -33,17 +33,6 @@ export default function TriVectorLeadershipPage() {
                 drive <span className="text-yellow-400 font-semibold">your</span> authentic leadership style.
               </p>
 
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-400">94%</div>
-                  <div className="text-sm text-white/70">Report breakthrough self-understanding</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-400">3.2x</div>
-                  <div className="text-sm text-white/70">More accurate than traditional assessments</div>
-                </div>
-              </div>
-
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="btn-primary">
                   Take the Assessment
@@ -495,101 +484,8 @@ export default function TriVectorLeadershipPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-slate-50">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Real People, Real Transformations</h2>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Necessity-driven testimonial */}
-            <Card className="p-8 border-0 shadow-xl overflow-hidden relative">
-              <div className="absolute top-0 left-0 w-full h-1 bg-blue-500" />
-              <div className="mb-6 flex items-center gap-2">
-                <span className="text-blue-500 bg-blue-100 p-1 rounded-full">⚡</span>
-                <span className="text-sm font-semibold text-blue-700">Necessity-Primary</span>
-              </div>
-
-              <blockquote className="text-slate-700 mb-6 italic">
-                "I always felt guilty about only performing well in crisis. LeadLife showed me this is actually my
-                superpower. Now I intentionally create 'positive pressure' to channel my energy."
-              </blockquote>
-
-              <div className="flex items-center gap-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50&text=AR"
-                  alt="Alex Rivera"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <strong className="block">Alex Rivera</strong>
-                  <span className="text-slate-600 text-sm">Startup Founder</span>
-                </div>
-              </div>
-            </Card>
-
-            {/* Generosity-driven testimonial */}
-            <Card className="p-8 border-0 shadow-xl overflow-hidden relative">
-              <div className="absolute top-0 left-0 w-full h-1 bg-yellow-500" />
-              <div className="mb-6 flex items-center gap-2">
-                <span className="text-yellow-500 bg-yellow-100 p-1 rounded-full">💝</span>
-                <span className="text-sm font-semibold text-yellow-700">Generosity-Primary</span>
-              </div>
-
-              <blockquote className="text-slate-700 mb-6 italic">
-                "I was burning out trying to help everyone. The Tri-Vector profile showed me how to set boundaries while
-                still honoring my natural generosity. Game-changer!"
-              </blockquote>
-
-              <div className="flex items-center gap-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50&text=ML"
-                  alt="Maria Lopez"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <strong className="block">Maria Lopez</strong>
-                  <span className="text-slate-600 text-sm">Non-profit Director</span>
-                </div>
-              </div>
-            </Card>
-
-            {/* Personality-driven testimonial */}
-            <Card className="p-8 border-0 shadow-xl overflow-hidden relative">
-              <div className="absolute top-0 left-0 w-full h-1 bg-purple-500" />
-              <div className="mb-6 flex items-center gap-2">
-                <span className="text-purple-500 bg-purple-100 p-1 rounded-full">✨</span>
-                <span className="text-sm font-semibold text-purple-700">Personality-Primary</span>
-              </div>
-
-              <blockquote className="text-slate-700 mb-6 italic">
-                "I always felt like I was 'too much' for traditional leadership roles. LeadLife helped me see my
-                creative energy as a strength, not something to suppress."
-              </blockquote>
-
-              <div className="flex items-center gap-4">
-                <Image
-                  src="/placeholder.svg?height=50&width=50&text=JT"
-                  alt="Jordan Taylor"
-                  width={50}
-                  height={50}
-                  className="rounded-full"
-                />
-                <div>
-                  <strong className="block">Jordan Taylor</strong>
-                  <span className="text-slate-600 text-sm">Creative Director</span>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Frequently Asked Questions</h2>
 
@@ -630,33 +526,18 @@ export default function TriVectorLeadershipPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Discover Your Leadership DNA?</h2>
             <p className="text-xl text-white/80 mb-8">
-              Join 50,000+ people who've discovered their authentic leadership style with the Tri-Vector Profile
+              Discover your authentic leadership style with the Tri-Vector Profile
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="btn-primary">
-                Start Your Free Assessment
+                Start Your Assessment
                 <span className="ml-2 text-xs bg-white/20 px-2 py-1 rounded-full">Results in 5 minutes</span>
               </Button>
               <Button variant="outline" className="border-white/20 text-slate-900 hover:bg-white/10">
                 View Sample Report
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-6 text-white/80">
-              <div className="flex items-center gap-2">
-                <span>🔒</span>
-                <span>Private & Secure</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>🧪</span>
-                <span>Science-Based</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>⭐</span>
-                <span>4.9/5 Rating</span>
-              </div>
             </div>
           </div>
         </div>

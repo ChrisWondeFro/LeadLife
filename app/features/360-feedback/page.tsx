@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Shield, Users, Lock, Heart, Target, Play, CheckCircle, ArrowRight } from "lucide-react"
+import { Heart, Target, Play, ArrowRight } from "lucide-react"
 
 export default function FeedbackPage() {
   return (
@@ -34,10 +34,6 @@ export default function FeedbackPage() {
 
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
-                  <Shield className="w-5 h-5 text-teal-400" />
-                  <span>100% Anonymous & Secure</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Heart className="w-5 h-5 text-teal-400" />
                   <span>Strengths-Based Approach</span>
                 </div>
@@ -50,7 +46,6 @@ export default function FeedbackPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="btn-primary">
                   Set Up Your First 360°
-                  <span className="ml-2 text-xs bg-white/20 px-2 py-1 rounded-full">Free with account</span>
                 </Button>
                 <Button size="lg" variant="outline" className="border-white/20 text-slate-900 hover:bg-white/10">
                   <Play className="mr-2 w-4 h-4" />
@@ -211,16 +206,16 @@ export default function FeedbackPage() {
                 </div>
               </div>
               <div className="md:col-span-4">
-                <h3 className="text-2xl font-bold mb-3">2. Send Secure Invites</h3>
+                <h3 className="text-2xl font-bold mb-3">2. Send Invites</h3>
                 <p className="text-slate-600 mb-4">
-                  Share temporary links that expire after use. No accounts needed. Complete anonymity guaranteed.
+                  Share temporary links that expire after use. No accounts needed.
                 </p>
                 <Card className="p-4 border border-slate-200">
                   <div className="space-y-2">
                     <p className="font-medium">Subject: Help [Your Name] grow - 5 min anonymous feedback</p>
                     <p className="text-slate-600">
                       Hi! [Your Name] values your perspective and invited you to share anonymous feedback through
-                      LeadLife's secure platform...
+                      LeadLife...
                     </p>
                   </div>
                 </Card>
@@ -237,7 +232,7 @@ export default function FeedbackPage() {
               <div className="md:col-span-4">
                 <h3 className="text-2xl font-bold mb-3">3. Guided Feedback</h3>
                 <p className="text-slate-600 mb-4">
-                  Respondents answer structured questions designed by psychologists to elicit helpful, specific insights
+                  Respondents answer structured questions designed to elicit helpful, specific insights
                 </p>
                 <div className="space-y-3">
                   <div className="p-3 bg-white rounded-lg border border-slate-200">
@@ -303,23 +298,7 @@ export default function FeedbackPage() {
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Designed for Psychological Safety</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all">
-              <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 text-2xl mb-4">
-                🔐
-              </div>
-              <h3 className="text-xl font-bold mb-2">Bank-Level Encryption</h3>
-              <p className="text-slate-600">All feedback is encrypted end-to-end. Even we can't see who said what.</p>
-            </Card>
-
-            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all">
-              <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 text-2xl mb-4">
-                👤
-              </div>
-              <h3 className="text-xl font-bold mb-2">True Anonymity</h3>
-              <p className="text-slate-600">No tracking, no IP logging, no way to identify respondents. Ever.</p>
-            </Card>
-
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all">
               <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 text-2xl mb-4">
                 🎭
@@ -449,129 +428,23 @@ export default function FeedbackPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Choose Your Feedback Frequency</h2>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="p-8 border-0 shadow-xl hover:shadow-2xl transition-all">
-              <h3 className="text-2xl font-bold mb-2">Explorer</h3>
-              <div className="text-4xl font-bold mb-6">Free</div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>1 feedback round per year</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Up to 5 respondents</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Basic report</span>
-                </li>
-              </ul>
-              <Button className="w-full">Get Started</Button>
-            </Card>
-
-            <Card className="p-8 border-0 shadow-xl hover:shadow-2xl transition-all relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                  Most Popular
-                </span>
-              </div>
-              <h3 className="text-2xl font-bold mb-2">Growth</h3>
-              <div className="text-4xl font-bold mb-6">
-                $29<span className="text-lg text-slate-500">/mo</span>
-              </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Unlimited feedback rounds</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Up to 15 respondents per round</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Advanced AI insights</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Progress tracking</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Custom questions</span>
-                </li>
-              </ul>
-              <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-                Start 14-Day Trial
-              </Button>
-            </Card>
-
-            <Card className="p-8 border-0 shadow-xl hover:shadow-2xl transition-all">
-              <h3 className="text-2xl font-bold mb-2">Teams</h3>
-              <div className="text-4xl font-bold mb-6">Custom</div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Everything in Growth</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Team-wide feedback loops</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Organizational insights</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
-                  <span>Custom integrations</span>
-                </li>
-              </ul>
-              <Button className="w-full">Contact Us</Button>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-20 bg-gradient-to-br from-teal-900 via-cyan-900 to-teal-900 text-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready for Feedback That Actually Helps?</h2>
             <p className="text-xl text-white/80 mb-8">
-              Join thousands who've transformed their leadership through honest, safe feedback
+              Transform your leadership through honest, safe feedback
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="btn-primary">
                 Set Up Your First 360°
-                <span className="ml-2 text-xs bg-white/20 px-2 py-1 rounded-full">Free to start</span>
               </Button>
               <Button variant="outline" className="border-white/20 text-slate-900 hover:bg-white/10">
                 View Sample Report
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-6 text-white/80">
-              <div className="flex items-center gap-2">
-                <Shield className="w-5 h-5" />
-                <span>100% Anonymous</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Users className="w-5 h-5" />
-                <span>10,000+ Users</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Lock className="w-5 h-5" />
-                <span>Bank-Level Security</span>
-              </div>
             </div>
           </div>
         </div>

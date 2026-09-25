@@ -1,11 +1,9 @@
 "use client"
 
-import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { Play, CheckCircle, MessageCircle, Star } from "lucide-react"
+import { Play, CheckCircle, MessageCircle } from "lucide-react"
 import { useState } from "react"
 
 export default function AICoachPage() {
@@ -78,7 +76,7 @@ export default function AICoachPage() {
               </h1>
               <p className="text-xl text-white/80">
                 Imagine having a wise, patient coach who knows your unique leadership style, remembers your journey, and
-                is always ready to help—without judgment, agenda, or hourly fees.
+                is always ready to help—without judgment or agenda.
               </p>
 
               <div className="space-y-4">
@@ -475,7 +473,7 @@ export default function AICoachPage() {
           </div>
 
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl font-bold mb-6">Built on Proven Methodologies</h3>
+            <h3 className="text-2xl font-bold mb-6">Informed by Established Approaches</h3>
             <div className="flex flex-wrap justify-center gap-4">
               <span className="px-4 py-2 bg-white rounded-full shadow-md text-slate-700">
                 Cognitive Behavioral Coaching
@@ -490,92 +488,6 @@ export default function AICoachPage() {
         </div>
       </section>
 
-      {/* Privacy & Ethics */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Your Conversations Are Sacred</h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <Card className="p-6 border-0 shadow-xl hover:shadow-2xl transition-all text-center">
-              <div className="text-4xl mb-4">🔒</div>
-              <h3 className="text-xl font-bold mb-2">End-to-End Encryption</h3>
-              <p className="text-slate-600">Your coaching conversations are encrypted and private</p>
-            </Card>
-
-            <Card className="p-6 border-0 shadow-xl hover:shadow-2xl transition-all text-center">
-              <div className="text-4xl mb-4">🚫</div>
-              <h3 className="text-xl font-bold mb-2">No Human Review</h3>
-              <p className="text-slate-600">No human ever reads your conversations with your AI coach</p>
-            </Card>
-
-            <Card className="p-6 border-0 shadow-xl hover:shadow-2xl transition-all text-center">
-              <div className="text-4xl mb-4">🗑️</div>
-              <h3 className="text-xl font-bold mb-2">Delete Anytime</h3>
-              <p className="text-slate-600">Full control to delete any or all conversations permanently</p>
-            </Card>
-
-            <Card className="p-6 border-0 shadow-xl hover:shadow-2xl transition-all text-center">
-              <div className="text-4xl mb-4">⚖️</div>
-              <h3 className="text-xl font-bold mb-2">Ethical AI</h3>
-              <p className="text-slate-600">Designed to empower, never manipulate or create dependency</p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-slate-50">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Life-Changing Conversations</h2>
-
-          <div className="max-w-4xl mx-auto">
-            <Card className="p-8 border-0 shadow-2xl">
-              <div className="space-y-4 mb-8">
-                <div className="flex justify-end">
-                  <div className="max-w-[80%] p-3 bg-slate-200 rounded-2xl rounded-tr-none">
-                    <p className="text-slate-800">"I don't know if I should stay at my job or pursue my passion"</p>
-                  </div>
-                </div>
-
-                <div className="flex justify-start">
-                  <div className="max-w-[80%] p-3 bg-rose-100 rounded-2xl rounded-tl-none">
-                    <p className="text-slate-800">
-                      "Let's explore what 'passion' means to you. Based on your high Personality vector, authentic
-                      expression is crucial for your fulfillment..."
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-rose-50 to-slate-50 p-6 rounded-xl">
-                <p className="text-lg text-slate-700 italic mb-4">
-                  "That conversation changed my life. My coach helped me see I could integrate my passion INTO my
-                  current role. I'm now leading our company's innovation lab."
-                </p>
-                <div className="flex items-center gap-4">
-                  <Image
-                    src="/placeholder.svg?height=50&width=50&text=SJ"
-                    alt="Sarah"
-                    width={50}
-                    height={50}
-                    className="rounded-full"
-                  />
-                  <div>
-                    <div className="font-medium">Sarah, 31</div>
-                    <div className="text-slate-600">Product Manager</div>
-                  </div>
-                  <div className="ml-auto flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-20 px-4 bg-gradient-to-br from-rose-900 via-red-900 to-rose-900 text-white">
         <div className="container px-4 md:px-6">
@@ -583,21 +495,13 @@ export default function AICoachPage() {
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready for Coaching That Actually Gets You?</h2>
               <p className="text-xl text-white/80 mb-8">
-                Join thousands who've found clarity, confidence, and direction through personalized AI coaching
+                Find clarity, confidence, and direction through personalized AI coaching
               </p>
 
               <div className="space-y-6">
                 <Button size="lg" className="btn-primary">
-                  Start Free Trial
-                  <span className="ml-2 text-xs bg-white/20 px-2 py-1 rounded-full">14 days, no card required</span>
+                  Get Started
                 </Button>
-
-                <div className="bg-white/10 p-4 rounded-xl">
-                  <p className="text-white/90 mb-2">Then just $29/month for unlimited coaching</p>
-                  <Link href="/pricing" className="text-white underline hover:text-white/80">
-                    See all pricing options →
-                  </Link>
-                </div>
               </div>
             </div>
 

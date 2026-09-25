@@ -35,15 +35,14 @@ export default function FinalCTASection() {
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Your Authentic Leadership Journey Starts Now</h2>
             <p className="text-xl mb-8 text-white/90">
-              Join 10,000+ people discovering their true leadership potential
+              Discover your true leadership potential
             </p>
             <Button
               size="lg"
               className="bg-white text-[#1a1f71] hover:bg-white/90 text-lg px-8 py-6 rounded-full font-semibold"
             >
-              Begin Your Free Assessment
+              Begin Your Assessment
             </Button>
-            {/* <p className="text-sm text-gray-600">🔥 437 people started their journey today</p> */}
           </div>
         </div>
       </section>
@@ -59,10 +58,9 @@ export default function FinalCTASection() {
             <div className="flex flex-col md:flex-row items-center gap-4">
               <div className="flex-1 text-center md:text-left">
                 <h3 className="font-bold text-lg">Ready to discover your leadership style?</h3>
-                {/* <p className="text-sm text-gray-600">🔥 437 people started their journey today</p> */}
               </div>
               <Button className="bg-gradient-to-r from-[#7B61FF] to-[#00D4AA] text-white">
-                Begin Your Free Assessment
+                Begin Your Assessment
               </Button>
             </div>
           </Card>

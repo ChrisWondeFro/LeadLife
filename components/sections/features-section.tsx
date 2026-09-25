@@ -3,7 +3,7 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { Brain, Users, BarChart3, Waves, Target, Bot, Sparkles, Shield } from "lucide-react"
+import { Brain, Users, BarChart3, Waves, Target, Bot, Sparkles } from "lucide-react"
 import Link from "next/link"
 
 const features = [
@@ -144,26 +144,6 @@ export default function FeaturesSection() {
             )
           })}
         </div>
-
-        {/* Security badges */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="flex flex-wrap justify-center gap-8 mt-16"
-        >
-          <div className="flex items-center gap-2 text-slate-600">
-            <Shield className="w-5 h-5" />
-            <span>Bank-level encryption</span>
-          </div>
-          <div className="flex items-center gap-2 text-slate-600">
-            <Shield className="w-5 h-5" />
-            <span>GDPR compliant</span>
-          </div>
-          <div className="flex items-center gap-2 text-slate-600">
-            <Shield className="w-5 h-5" />
-            <span>Your data stays yours</span>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

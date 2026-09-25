@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Lock, ChevronDown, Sparkles } from "lucide-react"
+import { Clock, ChevronDown, Sparkles } from "lucide-react"
 import ParticleBackground from "@/components/particle-background"
 
 const phrases = [
@@ -79,7 +79,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="btn-primary group relative overflow-hidden">
                 <span className="relative z-10 flex items-center gap-2">
-                  Start Your Free Discovery
+                  Start Your Discovery
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </span>
               </Button>
@@ -94,30 +94,10 @@ export default function HeroSection() {
             </div>
 
             <p className="flex items-center justify-center gap-2 text-white/60 text-sm">
-              <Lock className="w-4 h-4" />
-              No credit card required • 5-minute assessment
+              <Clock className="w-4 h-4" />
+              5-minute assessment
             </p>
           </div>
-
-          {/* Trust badges */}
-
-           {/* 
-           <div className="flex flex-wrap justify-center gap-8 pt-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">10,000+</div>
-              <div className="text-sm text-white/60">Leaders Transformed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">4.9/5</div>
-              <div className="text-sm text-white/60">User Rating</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">92%</div>
-              <div className="text-sm text-white/60">Report Growth</div>
-            </div>
-          </div>
-          */}
-          
         </div>
 
         {/* Scroll Indicator */}

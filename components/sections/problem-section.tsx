@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
 import { Card } from "@/components/ui/card"
 import { motion } from "framer-motion"
 import { TrendingDown, TrendingUp } from "lucide-react"
@@ -19,52 +18,9 @@ const solutions = [
   { icon: "🧭", text: "Internal compass calibration" },
 ]
 
-const stats = [
-  { target: 92, label: "Feel unseen in traditional systems", suffix: "%" },
-  { target: 76, label: "Hide their true sensitivity", suffix: "%" },
-  { target: 84, label: "Crave authentic leadership models", suffix: "%" },
-]
-
 export default function ProblemSection() {
-  const [counts, setCounts] = useState(stats.map(() => 0))
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const [hasAnimated, setHasAnimated] = useState(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true)
-          stats.forEach((stat, index) => {
-            let current = 0
-            const increment = stat.target / 50
-            const timer = setInterval(() => {
-              current += increment
-              if (current >= stat.target) {
-                current = stat.target
-                clearInterval(timer)
-              }
-              setCounts((prev) => {
-                const newCounts = [...prev]
-                newCounts[index] = Math.floor(current)
-                return newCounts
-              })
-            }, 30)
-          })
-        }
-      },
-      { threshold: 0.3 },
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [hasAnimated])
-
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-24 md:py-32 bg-gradient-to-b from-white to-slate-50">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2
@@ -73,7 +29,7 @@ export default function ProblemSection() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-6xl font-bold mb-6 text-slate-900"
           >
-            Why 87% of People Feel Like They're{" "}
+            Why So Many People Feel Like They're{" "}
             <span className="relative">
               <span className="relative z-10">Failing at Life</span>
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
@@ -97,7 +53,7 @@ export default function ProblemSection() {
           </motion.p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-20 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Old Way */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -159,35 +115,6 @@ export default function ProblemSection() {
             </Card>
           </motion.div>
         </div>
-
-        {/* Statistics Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-purple-600 rounded-3xl transform rotate-1" />
-          <div className="relative bg-gradient-to-r from-violet-600 to-purple-600 rounded-3xl p-12 shadow-2xl">
-            <div className="grid md:grid-cols-3 gap-8 text-white">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center"
-                >
-                  <div className="text-5xl md:text-6xl font-bold mb-2">
-                    {counts[index]}
-                    {stat.suffix}
-                  </div>
-                  <p className="text-white/80 text-lg">{stat.label}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )
